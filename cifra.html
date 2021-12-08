@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+		<meta charset="UTF-8">
+		<title>Cifra de Cesar</title>
+        <link rel="stylesheet" href="cifra.css">
+</head>
+<body>
+<form name="meuForm" method="post" id="formulario">
+	<div class="box">
+		<h1>Formulário</h1>
+
+			<label>Mensagem para codificar</label> <br>
+
+ 			<input type="text" class="input_text" id= "entra" name="entrada de mensagem"/> <br> <br>
+       <label>Mensagem codificada</label> <br>
+
+ 			<input type="text" class="input_text" name="entrada de mensagem" id="saida"/> <br> <br>
+        </label for= "entrada">Codificar</label>
+          <input type="radio" id="radioCodificar" name="entrada" />
+        </label for= "entrada">Decodificar</label>
+        <input type="radio"  id="radioDecodificar" name= "entrada"/> <br> <br>
+
+        <select name="time" id="cifra"> 
+            <option value="cifraCesar">Cifra de César</option>
+            <option value="base64">Base 64</option>
+            </select> <br> <br>
+            <label>
+              Insira uma chave
+            </label> 
+            <input type="number" id="chave"> <br> <br>
+            <input type="submit" value="Enviar" id="botao" />
+	</div>
+</form>
+<script src="cifra.js"></script>
+</body>
+</html>
